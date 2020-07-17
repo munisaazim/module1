@@ -1,0 +1,108 @@
+*{
+  box-sizing: border-box;
+}
+h1{
+    text-align: center;
+}
+.menuOne, .menuTwo, .menuThree{
+    width: 26%;
+    border: 1px solid black;
+    margin: 45px;
+}
+.menuTwo{
+    position: relative;
+    top: -10.6rem;
+    left:32rem;
+
+}
+.menuThree{
+    float: right;
+    position: relative;
+    top:-380px;
+}
+.menuOne, .menuTwo, .menuThree{
+    background-color: gray;
+}
+.menuOne>span{
+    border: 1px solid black;
+    box-sizing: border-box;
+    position: relative;
+    left:309px;
+    background-color: pink;
+    padding: 0 15px;
+
+}
+.menuTwo>span{
+    border: 1px solid black;
+    box-sizing: border-box;
+    position: relative;
+    left:332px;
+    background-color: indianred;
+    color: #ffffff;
+    padding: 0 15px;
+}
+.menuThree>span{
+    border: 1px solid black;
+    box-sizing: border-box;
+    position: relative;
+    left:327px;
+    background-color: darkkhaki;
+    padding: 0 15px;
+}
+
+@media(min-width:768px) and (max-width:991px){
+.menuOne, .menuTwo, .menuThree{
+position: static;
+margin: 35px;;
+}
+.menuOne, .menuTwo{
+    width: 50%;
+    height: 90px;
+    overflow: hidden;
+}
+.menuTwo{
+    position: relative;
+    top:-125px;
+}
+.menuThree{
+    width: 100%;
+    top: -150px;
+    position: relative;
+   left:80px;
+}
+.menuOne>span{
+   float: right;
+    position: static;
+}
+.menuTwo>span{
+    float: right;
+     position: static;
+ }
+ .menuThree>span{
+    float: right;
+     position: static;
+ }
+}
+@media(max-width:767px)
+{
+.menuOne,.menuTwo,.menuThree{
+    position: static;
+    top: initial;
+    width: 50%;
+}
+.menuThree{
+    float: none;
+}
+.menuOne>span{
+    float: right;
+     position: static;
+ }
+ .menuTwo>span{
+     float: right;
+      position: static;
+  }
+  .menuThree>span{
+     float: right;
+      position: static;
+  }
+}
